@@ -2,54 +2,46 @@ body {
     background: #fdf3dd;
     margin: 0;
     color: #373d3b;
- }
- 
- 
- .title{
+}
+
+
+.title {
     font-family: "cooper-black-std", serif;
     font-weight: 300;
     font-style: normal;
     font-size: 120%;
- }
- 
- 
- header {
+}
+
+
+header {
     /* font-family: "cooper-black-std", serif;
     font-weight: 100;
     font-style: normal;
     font-size: 100%; */
-   
+
     background: #c6dbec;
-    position: fixed;
+    position: sticky;
+    box-sizing: border-box;
     top: 0;
     width: 100%;
     padding: 15px;
     text-align: center;
- }
- 
- 
- main {
-    padding-top: 70px;
- }
- 
- 
- 
- 
- 
- 
- nav ul {
+}
+
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
- 
- 
+    padding: 0px;
+
     font-family: "cooper-black-std", serif;
     font-weight: 200;
     font-style: light;
- }
- 
- 
- nav ul li a {
+}
+
+
+nav ul li a {
     background: #caaacd;
     color: black;
     text-decoration: none;
@@ -57,45 +49,96 @@ body {
     margin: 0 15px;
     padding: 10px 15px;
     border-radius: 20px;
- }
- 
- 
- .content {
-    margin-top: 150px;
+}
+
+
+.content {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
- }
- 
- 
- .facts {
+}
+
+
+.facts {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
     width: 80%;
     margin-bottom: 20px;
- }
- 
- 
- .text {
+}
+
+
+.text {
     background: #f1dfb6;
     padding: 15px;
     border: 5px solid #cb962e;
     border-radius: 10px;
     width: 75%;
- }
- 
- 
- .image {
+}
+
+
+.image {
     background: #caaacd;
     width: 150px;
     height: 150px;
- }
- 
- 
- footer {
+}
+
+
+footer {
     background: #caaacd;
     text-align: center;
     padding: 20px;
- }
+}
+
+
+#toggle, label {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+        width: 75%;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+
+    .list li {
+        margin-top: 15px;
+        flex: 1 1 40%;
+        text-align: center;
+    }
+    
+
+    #toggle {
+        display: none;
+    }
+    
+
+    label, img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 24px;
+        right: 20px;
+    }
+    
+
+    input:checked ~ .list {
+        display: flex;
+    }
+    
+
+    .bottom-row {
+        margin-top: 10px;
+    }
+}
