@@ -69,14 +69,21 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
+.text-even {
+   margin-right: 5%;
+ }
 
-.text {
+ .text-odd {
+   margin-left: 5%;
+ }
+ 
+ .text-even, .text-odd {
     background: #f1dfb6;
     padding: 15px;
     border: 5px solid #cb962e;
     border-radius: 10px;
     width: 75%;
-}
+ }
 
 
 .image {
