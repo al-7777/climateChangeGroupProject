@@ -2,6 +2,9 @@ body {
     background: #fdf3dd;
     margin: 0;
     color: #373d3b;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    word-spacing: 0.4px;
 }
 
 
@@ -115,6 +118,10 @@ a[href^="http"]::after {
 }
 
 footer {
+    font-family: "arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+    
     background: #caaacd;
     text-align: center;
     padding: 20px;
