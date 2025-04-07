@@ -89,11 +89,14 @@ nav ul li a {
 }
 
 
-.image {
-   background: #caaacd;
-   width: 150px;
-   height: 150px;
+img {
+   border-radius: 10px;
+   box-shadow: 10px 10px #caaacd;
+   height: 200px;
+   width: auto;
 }
+
+
 
 a[href^="http"]::after {
    content: "";
@@ -152,9 +155,17 @@ label {
       display: none;
    }
 
+   #tractor {
+      width: 200px;
+      height: auto;
+   
+      border-radius: 10px;
+      box-shadow: 10px 10px #caaacd;
+      }
 
-   label,
-   img {
+
+   label, 
+   #bars {
       display: block;
       width: 30px;
       height: 30px;
@@ -169,7 +180,7 @@ label {
    }
 
 
-   .image {
+   /* .image {
       width: 203px;
-   }
+   } */
 }
